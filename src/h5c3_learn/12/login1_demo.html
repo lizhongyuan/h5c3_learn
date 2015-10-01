@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style type="text/css">
+        h1{font-size:20px;}
+        #login{
+            width:400px;
+            padding:1em 2em 0 2em;
+            font-size:12px;
+            border:#003399 solid 2px;
+        }
+        label{
+            padding-left:1em;
+            line-height:26px;
+            display:block;
+            font-weight:bold;
+            border:#F47D31 solid 2px;
+        }
+
+        input#name, input#password
+        {
+            border:1px solid #ccc;
+            width:160px;
+            height:22px;
+            padding-left:20px;
+            margin:6px 0;
+            line-height:20px;
+        }
+        #name {background:url(../../img/12/name.gif) no-repeat 2px 2px;}
+    </style>
+</head>
+<body>
+<fieldset id="login">
+    <legend>用户登录</legend>
+    <form action="" method="POST" class="form">
+        <label for="name">姓名
+            <input id="name" name="name" type="text" value=""/>
+        </label>
+        <label for="password">密码
+            <input name="password" type="text" id="password" value="" disabled="disabled"/>
+        </label>
+        <input type="image" class="button" src="../../img/12/login1.gif"/>
+    </form>
+</fieldset>
+</body>
+</html>

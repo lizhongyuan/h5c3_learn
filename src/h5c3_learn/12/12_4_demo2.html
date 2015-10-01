@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style type="text/css">
+        body {
+            font-family: "宋体";
+        }
+        table {
+            border-collapse: collapse;
+            font-size: 75%;
+            line-height: 1.1;
+        }
+        tr:hover, td:hover {background: #FF9;}
+        th, td {
+            padding: .3em .5em;
+            cursor: pointer;    /* 手型光标样式 */
+        }
+        th {
+            font-weight:  normal;
+            text-align: left;
+            padding-left: 15px;
+        }
+
+        td:only-of-type {
+            background: #eee url("../../img/12/arrow.gif") no-repeat 12px 50%;
+            padding-left: 28px;
+            font-weight: bold;
+            color: #444;
+        }
+
+        thead th {
+            background: #c6ceda;
+            border-color: #431414 #431414 #987654 #765433;
+            border-style: solid;
+            border-width: 5px 5px 5px 5px;
+            padding-left: .5em;
+        }
+
+        tbody th:not(.end) {
+            background: url("../../img/12/dots.gif") 15px 56% no-repeat;
+            padding-left: 26px;
+        }
+
+        tbody th.end {
+            background: url("../../img/12/dots2.gif") 15px 56% no-repeat;
+        }
+    </style>
+</head>
+<body>
+<table>
+    <thead>
+        <tr>
+            <th>排名</th>
+            <th>校名</th>
+            <th>总得分</th>
+            <th>人才培养总得分</th>
+            <th>研究生培养总得分</th>
+            <th>本科生培养总得分</th>
+            <th>科学研究总得分</th>
+            <th>自然科学研究总得分</th>
+            <th>社会科学研究总得分</th>
+            <th>所属省份</th>
+            <th>分省排名</th>
+            <th>学校类型</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td colspan="12">一类</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>清华大学</td>
+            <td>2222</td>
+            <td>333</td>
+            <td>444</td>
+            <td>555</td>
+            <td>6666</td>
+            <td>777</td>
+            <td>888</td>
+            <td width="16">京 </td>
+            <td width="12">1</td>
+            <td>理工</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>北京大学</td>
+            <td>2222</td>
+            <td>333</td>
+            <td>444</td>
+            <td>555</td>
+            <td>6666</td>
+            <td>777</td>
+            <td>888</td>
+            <td width="16">京 </td>
+            <td width="12">2</td>
+            <td>综合</td>
+        </tr>
+        <tr>
+            <td colspan="12">二类</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>浙江大学</td>
+            <td>2222</td>
+            <td>333</td>
+            <td>444</td>
+            <td>555</td>
+            <td>6666</td>
+            <td>777</td>
+            <td>888</td>
+            <td width="16">浙 </td>
+            <td width="12">1</td>
+            <td>综合</td>
+        </tr>
+    </tbody>
+</table>
+</body>
+</html>

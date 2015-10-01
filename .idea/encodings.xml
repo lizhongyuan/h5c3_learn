@@ -1,16 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
-    <file url="file://$PROJECT_DIR$/src/h5c3_learn/12/grace_demo1.html" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/h5c3_learn/12/href_demo.html" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/h5c3_learn/12/href_demo2.html" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/h5c3_learn/12/image_radius_demo.html" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/h5c3_learn/12/pseudo_selector_demo1.html" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/h5c3_learn/5/circle_demo1.html" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/h5c3_learn/5/line.html" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/h5c3_learn/5/rectangle.html" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/h5c3_learn/hello_world.html" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/h5c3_learn/test/test_counter_demo.html" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/h5c3_learn/test/test_counter_demo2.html" charset="UTF-8" />
   </component>
 </project>
