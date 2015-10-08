@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style type="text/css">
+        div {
+            z-index: 100;
+            width: 100px;
+            height: 100px;
+            border: 1px solid red;
+            -webkit-border-radius: 50px;
+            background: -webkit-gradient(
+                radial, 50 50, 10, 50 50, 114, from(transparent),
+                color-stop(0.01, transparent),
+                color-stop(0.021, rgba(0, 0, 0, 1)),
+                color-stop(0.09, rgba(0, 0, 0, 1)),
+                color-stop(0.1, rgba(28, 28, 28, 1)), to(rgba(28, 28, 28, 1)));
+        }
+
+        /*
+        div.inner {
+            z-index: 200;
+            background: -webkit-gradient(
+                radial, 50 75, 0, 50 75, 25, from(transparent),
+                color-stop(0.01, transparent),
+                color-stop(0.021, red),
+                color-stop(0.09, darkred),
+                color-stop(0.1, mediumvioletred), to(orangered)));
+        }
+        */
+    </style>
+</head>
+<body>
+<div>
+    <div>
+        <div class="inner"></div>
+    </div>
+</div>
+</body>
+</html>

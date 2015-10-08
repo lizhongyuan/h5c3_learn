@@ -5,31 +5,119 @@
     <title></title>
     <style type="text/css">
         #nav {
+            margin:0;
+            padding:7px 6px 0;
+            line-height: 100%;  /* 实现菜单项垂直居中 */
+            /* 设计圆角外框及其阴影效果 */
+            border-radius: 2em;
+            -webkit-border-radius: 2em;
+            -webkit-box-shadow: 0 1px 3px rgba(0,0,0,.4);
+            -moz-box-shadow: 0 1px 3px rgba(0,0,0,.4);
+            -box-shadow: 0 1px 3px rgba(0,0,0,.4);
+
+            background: -webkit-gradient(linear, left top, left bottom, from(#a9a9a9), to(#7a7a7a));
+            border: solid 1px #6d6d6d;
         }
 
-        #nav li {}
+        #nav li {
+            margin: 0 5px;
+            padding: 0 0 8px;
+            float: left;
+            position: relative;
+            list-style: none;
+        }
 
-        #nav a {}
+        #nav a {
+            font-weight: bold;
+            color: #e7e5e5;
+            text-decoration: none;  /* 没有下划线 */
+            display: block;
+            padding: 8px 20px;
+            margin: 0;
+            /* 设计圆角及其字体阴影效果 */
+            -webkit-border-radius: 0.6em;
+            -moz-border-radius: 0.6em;
+            border-radius: 0.6em;
+        }
 
-        #nav .current a, #nav li:hover > a {}
+        #nav .current a, #nav li:hover > a {
+            background:#d1d1d1;
+            background: -webkit-gradient(linear, left top, left bottom, from(red), to(blue));
+            color: #431443;
+            border-top: solid 1px #f8f8f8;
+            -webkit-box-shadow: 0 1px 1px rgba(0,0,0, .2);
+            -moz-box-shadow: 0 1px 1px rgba(0,0,0, .2);
+            -box-shadow: 0 1px 1px rgba(0,0,0, .2);
+        }
 
-        #nav ul li:hover a, #nav li:hover li a{}
+        #nav ul li:hover a, #nav li:hover li a{
+            background: none;
+            border: none;
+            color: #666;
+            -webkit-box-shadow: none;
+        }
 
-        #nav ul a:hover {}
+        #nav ul a:hover {
+            background: -webkit-gradient(linear, left top, left bottom, from(#04acec), to(#0186ba));
+            color:#fff !important;
+            -webkit-border-radius: 0;
+            -moz-border-radius: 0;
+            border-radius: 0;
+            text-shadow: 0 1px 1px rgba(0, 0, 0, .1);
+        }
 
-        #nav ul {}
+        #nav ul {
+            background: #ddd;
+            display:none;
+            margin:0;
+            padding:0;
+            width:185px;
+            position:absolute;
+            top:35px;
+            left:0;
+            border:solid 1px #b4b4b4;
+            /* 设计子菜单显示圆角边框，已经阴影效果 */
+            -webkit-border-radius: 10px;
+            -moz-border-radius: 10px;
+            border-radius: 10px;
+            -webkit-box-shadow: 0 1px 3px rgba(0,0,0, .3);
+            -moz-box-shadow: 0 1px 3px rgba(0,0,0, .3);
+            -box-shadow: 0 1px 3px rgba(0,0,0, .3);
+        }
 
-        #nav li:hover > ul {}
+        #nav li:hover > ul {
+            display: block;
+        }
 
-        #nav ul li {}
+        #nav ul li {
+            float:none;
+            margin:0;
+            padding: 0;
+        }
 
-        #nav ul a {}
+        #nav ul a {
+            font-weight: normal;
+            text-shadow: 0 1px 1px rgba(255, 255, 255, .9);
+        }
 
-        #nav ul ul {}
+        #nav ul ul {
+            left: 181px;
+            top: -3px;
+        }
 
-        #nav ul li:first-child > a {}
+        #nav ul li:first-child > a {
+            -webkit-border-top-left-radius: 9px;
+            -moz-border-top-left-radius: 9px;
+            -webkit-border-top-right-radius: 9px;
+            -moz-border-top-right-radius: 9px;
+        }
 
-        #nav ul li:last-child > a {}
+        #nav ul li:last-child > a {
+            -webkit-border-top-left-radius: 9px;
+            -moz-border-top-left-radius: 9px;
+            -webkit-border-top-right-radius: 9px;
+            -moz-border-top-right-radius: 9px;
+        }
 
         /* 清除固定高度，让菜单框自动张开包含所有子元素 */
         #nav:after {
