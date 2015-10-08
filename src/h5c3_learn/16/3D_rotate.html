@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style type="text/css">
+        div {
+            margin: 0 auto;
+            width: 540px;
+            height: 405px;
+            background:url("../../img/16/moto1.gif") center no-repeat;
+            -webkit-transform-style: preserve-3d;
+            -moz-transform-style: preserve-3d;
+            -ms-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+
+            -webkit-animation-name: x-spin;
+            -webkit-animation-duration: 20s;
+            -webkit-animation-iteration-count: infinite;
+            -webkit-animation-timing-function: linear;
+        }
+
+        @-webkit-keyframes x-spin {
+            0% {
+                -webkit-transform: rotateX(0deg);
+            }
+
+            50% {
+                -webkit-transform: rotateX(180deg);
+            }
+
+            100% {
+                -webkit-transform: rotateX(360deg);
+            }
+        }
+
+    </style>
+</head>
+<body>
+<div></div>
+</body>
+</html>

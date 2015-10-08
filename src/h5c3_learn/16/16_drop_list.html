@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style type="text/css">
+        #nav {
+        }
+
+        #nav li {}
+
+        #nav a {}
+
+        #nav .current a, #nav li:hover > a {}
+
+        #nav ul li:hover a, #nav li:hover li a{}
+
+        #nav ul a:hover {}
+
+        #nav ul {}
+
+        #nav li:hover > ul {}
+
+        #nav ul li {}
+
+        #nav ul a {}
+
+        #nav ul ul {}
+
+        #nav ul li:first-child > a {}
+
+        #nav ul li:last-child > a {}
+
+        /* 清除固定高度，让菜单框自动张开包含所有子元素 */
+        #nav:after {
+            content:".";
+            display: block;
+            clear: both;
+            visibility: hidden;
+            line-height: 0;
+            height: 0;
+        }
+
+        #nav { display: inline-block; }
+
+        /*
+        html[xmlns] #nav{display: block;}
+        html #nav {height:1%;}
+        */
+    </style>
+</head>
+<body>
+<ul id="nav">
+    <li class="current"><a href="#">首页</a></li>
+    <li><a href="#">新闻  >></a>
+        <ul>
+            <li><a href="#">国际新闻</a></li>
+            <li><a href="#">国内新闻</a></li>
+                <ul>
+                    <li><a href="#">地方新闻</a></li>
+                    <li><a href="#">科技新闻</a></li>
+                        <ul>
+                            <li><a href="#">移动互联网发展趋势</a></li>
+                            <li><a href="#">云计算</a></li>
+                        </ul>
+                </ul>
+        </ul>
+    </li>
+    <li><a href="#">论坛</a></li>
+    <li><a href="#">微博</a></li>
+</ul>
+</body>
+</html>

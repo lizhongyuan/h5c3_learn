@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        .test ul {
+            list-style: none;
+        }
+
+        /*
+        .test li {
+            float: left;
+            width: 100px;
+            background: #CCC;
+            margin-left: 3px;
+            line-height: 30px;
+        }
+        */
+
+        .test a {
+            float: left;
+            width: 100px;
+            background: #CCC;
+            margin-left: 3px;
+            line-height: 30px;
+            display: block;
+            text-align: center;
+            height: 30px;
+        }
+
+        .test a:link {
+            color: #666;
+            /*color: #F47D31;*/
+            /*background: url("../../img/15/icon1.jpg") #DD1 no-repeat 5px 12px;*/
+            background: url("../../img/15/icon1.jpg") #CCC no-repeat 5px 12px;
+            text-decoration: none;
+        }
+
+        .test a:visited {
+            color: #666;
+            test-decoration: none;
+        }
+
+        .test a.click:hover {
+            color: #FFF;
+            font-weight: bold;
+            text-decoration: none;
+            background: url("../../img/15/icon2.jpg") #F00 no-repeat 5px 12px;
+            /*
+            -webkit-transform: skew(30deg, -10deg) scale(1.2);
+            -moz-transform: skew(30deg, -10deg) scale(1.2);
+            -o-transform: skew(30deg, -10deg) scale(1.2);
+            */
+            -webkit-transform: matrix(1, 0.4, 0, 1, 0, 0);
+            -moz-transform: matrix(1, 0.4, 0, 1, 0, 0);
+            -o-transform: matrix(1, 0.4, 0, 1, 0, 0);
+        }
+    </style>
+</head>
+<body>
+<div class="test">
+    <ul>
+        <li><a class="click" href="1">首页</a></li>
+        <li><a class="click" href="2">新闻</a></li>
+        <li><a class="click" href="3">论坛</a></li>
+        <li><a class="click" href="4">博客</a></li>
+        <li><a class="click" href="5">团购</a></li>
+        <li><a>微博</a></li>
+    </ul>
+</div>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style type="text/css">
+        body {background:#fff url("../../img/15/bg3.JPG");}
+
+        ul.polaroids li {
+            display: inline;
+        }
+
+        ul.polaroids a {
+            float: left;
+            width: auto;
+            margin: 0 0 27px 30px;
+            padding: 10px 10px 15px 10px;
+            text-decoration: none;
+            color: #333;
+            font-size: 18px;
+            /**/
+            -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, .25);
+            -moz-box-shadow: 0 3px 6px rgba(0, 0, 0, .25);
+            box-shadow: 0 3px 6px rgba(0, 0, 0, .25);
+            /**/
+            -webkit-transform: rotate(-2deg);
+            -webkit-transition: -webkit-transform .15s linear;
+            -moz-transform: rotate(-2deg);
+        }
+
+        ul.polaroids img {
+            display: block;
+            height: 100px;
+            margin-bottom: 12px;
+        }
+
+        ul.polaroids a:after {content:attr(title);}
+
+        ul.polaroids li:nth-child(even) a {
+            -webkit-transform: rotate(5deg);
+            -moz-transform: rotate(5deg);
+        }
+
+        ul.polaroids li a:hover {
+            /* 放大对象 1.25  */
+            -webkit-transform: scale(1.25);
+            -moz-transform: scale(1.25);
+            -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, .5);
+            -moz-box-shadow: 0 3px 6px rgba(0, 0, 0, .5);
+            position: relative;
+            z-index: 5;
+        }
+
+    </style>
+</head>
+<body>
+    <ul class="polaroids">
+        <li><a href="1" title="相识"><img src="../../img/15/image-11.jpg"/></a></li>
+        <li><a href="2" title="凝视"><img src="../../img/15/22.jpg"/></a></li>
+        <li><a href="3" title="甜睡"><img src="../../img/15/33.jpg"/></a></li>
+        <li><a href="4" title="逗乐"><img src="../../img/15/44.jpg"/></a></li>
+        <li><a href="5" title="奔跑"><img src="../../img/15/55.jpg"/></a></li>
+        <li><a href="6" title="漠视"><img src="../../img/15/66.jpg"/></a></li>
+        <li><a href="7" title="险峰"><img src="../../img/15/image-07.jpg" alt="险峰"/></a></li>
+        <li><a href="8" title="胜景"><img src="../../img/15/image-08.jpg" alt="胜景"/></a></li>
+    </ul>
+</body>
+</html>

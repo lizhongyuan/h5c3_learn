@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style type="text/css">
+        .accordion {
+            background: #eee;
+            border: 1px solid #999;
+            margin: 2em;
+        }
+
+        .accordion h2 {
+            margin: 0;
+            padding: 12px 0;
+            background: #CCC;
+        }
+
+        .accordion .section {
+            border-bottom: 1px solid #ccc;
+            background: #fff;
+        }
+
+        .accordion h3 {
+            margin: 0;
+            padding: 0;
+            background: #eee;
+            padding: 2px 1em;
+        }
+
+        .accordion h3 a {
+            font-weight: normal;
+            text-decoration: none;
+        }
+
+        /* 当获得目标焦点时，粗体显示选项标题栏文字 */
+        .accordion :target h3 a {
+            font-weight: bold;
+        }
+
+        /* 选项栏标题对应的选项子框样式 */
+        .accordion h3 + div {
+            height: 0;
+            padding:0 1em;
+            overflow: hidden;
+            webkit-transition: height 0.3s ease-in;
+        }
+
+        .accordion h3 + div img { margin:4px; }
+
+        .accordion :target h3 + div {
+            height: 350px;
+            overflow: auto; /* 当元素溢出了框体之外 */
+            webkit-transition: height 0.3s ease-out;
+        }
+    </style>
+</head>
+<body>
+<div class="accordion">
+    <h2>百度新闻</h2>
+    <div id="one" class="section">
+        <h3><a href="#one">军事</a></h3>
+        <div><img src="../../img/16/1.JPG"/></div>
+    </div>
+    <div id="two" class="section">
+        <h3><a href="#two">财经</a></h3>
+        <div><img src="../../img/16/2.JPG"/></div>
+    </div>
+    <div id="three" class="section">
+        <h3><a href="#three">体育</a></h3>
+        <div><img src="../../img/16/3.JPG"/></div>
+    </div>
+</div>
+</body>
+</html>

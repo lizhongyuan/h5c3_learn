@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style type="text/css">
+        body {
+            background: url("../../img/16/apple1.jpg") center no-repeat;
+        }
+
+        ul.osx-dock {
+            display: inline-block;
+            height: 130px;
+            padding: 0 0 40px 0;
+            overflow: hidden;
+            margin: 0 0 0 40px;
+        }
+
+        ul.osx-dock li {
+            display: block;
+            float: left;
+            position: relative;
+            width: 50px;
+            height: 50px;
+            margin: 60px 0 4px 0;
+        }
+
+        ul.osx-dock li a {
+            display: block;
+            height: 50px;
+            padding: 0 1px;
+        }
+
+        ul.osx-dock li a img {width:48px;}
+
+        ul.osx-dock li:hover { /* hover后，左右空隙变大 */
+            margin-left: 9px;
+            margin-right: 9px;
+            z-index: 200;
+        }
+
+        ul.osx-dock li:hover a { /*放大1.5倍*/
+            -webkit-transform-origin: center bottom;
+            -webkit-transform: scale(1.5);
+        }
+
+        ul.osx-dock li span {
+            position: absolute;
+            bottom:80px;
+            margin: 0 auto;
+            /*display: none;*/
+            width: auto;
+            font-size: 11px;
+            font-weight: bold;
+            padding: 3px 6px;
+            -webkit-border-radius: 6px;
+            color: #fff;
+        }
+
+        ul.osx-dock li:hover span {display:block;}
+
+        div#dockContainer {
+            position: fixed;
+            bottom: 12px;
+            height: 120px;
+            padding: 50px 0 0;
+            text-align: center;
+            -webkit-border-radius: 6px;
+            -moz-border-radius: 6px;
+            width: 100%;
+            line-height: 1;
+            z-index: 100;
+        }
+
+        div#dockWrapper {
+            width: auto;
+            display: inline-block;
+            position: relative;
+            border-bottom: solid 2px rgba(255, 255, 255, 0.35);
+            line-height: 0;
+        }
+    </style>
+</head>
+<body>
+<div id="dockContainer">
+    <div id="dockWrapper">
+        <ul class="osx-dock">
+            <li class="active"><span>ZURB</span><a href="#" title="ZURB"><img src="../../img/16/zurb-divider.png"/></a></li>
+            <li><span>LinkedIn</span><a href="#" title="LinkedIn"><img src="../../img/16/linkedin-icon.png"/></a></li>
+            <li><span>Notable</span><a href="#" title="Notable"><img src="../../img/16/notable-icon.png"/></a></li>
+            <li><span>last.fm</span><a href="#" title="Last.fm"><img src="../../img/16/lastfm-icon.png"/></a></li>
+            <li><span>Facebook</span><a href="#" title="Facebook"><img src="../../img/16/facebook-icon.png"/></a></li>
+            <li><span>Google</span><a href="#" title="Google"><img src="../../img/16/google-icon.png"/></a></li>
+            <li><span>Notable</span><a href="#" title="Notable"><img src="../../img/16/notable-icon.png"/></a></li>
+            <li><span>last.fm</span><a href="#" title="Last.fm"><img src="../../img/16/lastfm-icon.png"/></a></li>
+            <li><span>Facebook</span><a href="#" title="Facebook"><img src="../../img/16/facebook-icon.png"/></a></li>
+            <li><span>Google</span><a href="#" title="Google"><img src="../../img/16/google-icon.png"/></a></li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>
